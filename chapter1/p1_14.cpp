@@ -29,6 +29,7 @@ int main() {
     {
         if (char_counts[i] > 0)
         {
+            // 
             if (isprint(i)){
                 printf("%c (%d): ",i,char_counts[i]);
             } else{

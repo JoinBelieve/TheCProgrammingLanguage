@@ -17,16 +17,20 @@ int main() {
     // 读取输入并统计单词长度
     while ((c = getchar()) != EOF) {
         if (c == ' ' || c == '\n' || c == '\t') {
+            // 空格、换行、制表走这
             if (state == IN) {
                 if (word_length <= MAX_WORD_LENGTH) {
+                    // 单词长度如果小于等于最大单词长度，对应word_length下标的数组的值就加一；
                     word_lengths[word_length]++;
                 } else {
+                    // 最大单词长度下标对应数组的值加一
                     word_lengths[MAX_WORD_LENGTH]++;
                 }
                 word_length = 0;
             }
             state = OUT;
         } else {
+            // 非空格、换行、制表的字符，遇到一个就加一
             state = IN;
             word_length++;
         }
@@ -36,12 +40,13 @@ int main() {
     printf("Horizontal Histogram of Word Lengths:\n");
     for (i = 1; i <= MAX_WORD_LENGTH; i++) {
         printf("%2d: ", i);
+        // 小于i下标中的数组数量，就打印星号
         for (j = 0; j < word_lengths[i]; j++) {
             printf("*");
         }
         printf("\n");
     }
-
+    // 如果最大数长度的数组值大于0，则打印长度标志和星号
     if (word_lengths[MAX_WORD_LENGTH] > 0) {
         printf("%2d+: ", MAX_WORD_LENGTH);
         for (j = 0; j < word_lengths[MAX_WORD_LENGTH]; j++) {
