@@ -1,0 +1,9 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '/Users/dan/Documents/CProjects/TheCProgrammingLanguage/chapter2/s2_7'
+relocations:
+  - { offsetInCU: 0x26, offset: 0x26, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x0, symBinAddr: 0x100003D60, symSize: 0x8C }
+  - { offsetInCU: 0x41, offset: 0x41, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x0, symBinAddr: 0x100003D60, symSize: 0x8C }
+  - { offsetInCU: 0x69, offset: 0x69, size: 0x8, addend: 0x0, symName: __Z4atoiPc, symObjAddr: 0x8C, symBinAddr: 0x100003DEC, symSize: 0xCC }
+  - { offsetInCU: 0xBF, offset: 0xBF, size: 0x8, addend: 0x0, symName: __Z5loweri, symObjAddr: 0x158, symBinAddr: 0x100003EB8, symSize: 0x90 }
+...
