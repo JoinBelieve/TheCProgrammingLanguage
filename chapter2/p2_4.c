@@ -30,3 +30,9 @@ int main() {
     return 0;
 }
 
+/**
+ * 问题：
+ * - squeeze(s1,s2) 不能是 -> squeeze("hello","hel");
+ * - ; 在循环中是什么意思？答：如果满足条件，继续循环
+ */
+
