@@ -58,7 +58,7 @@ void squeeze(char s[], int c) {
     s[j] = '\0';
 }
 
-int main(){
+int main() {
     char s[] = "0XF1";
     printf("result = %d" , htoi(s));
     return 0;
